@@ -1,7 +1,7 @@
 clear;
 clc;
 
-load('../datasets/lost.mat');
+load('lost.mat');
 
 % normalize the PL data
 data = zscore(data);     
