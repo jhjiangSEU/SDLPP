@@ -2,19 +2,16 @@
 The code of SDLPP
 
 1. Directory structure
-===========================================================================
 ├── SDLPP		// SDLPP code
 ├── datasets                   	// a synthetic data set with r=1,2,3 and a real-world dataset
 ├── README.txt
 
 
 2. How to start?
-===========================================================================
 To help you start working with SDLPP, we provide a demo(See demo.m) in SDLPP. 
 
 
 3. Data sets
-===========================================================================
 Because the data sets are too large, we only provide a synthetic data set slashdot with r=1,2,3 and a real-world data set lost.
 - Real-world data sets are publicly available at: http://palm.seu.edu.cn/zhangml/Resources.htm#data.
 - Synthetic data sets are derived from multi-label benchmark data sets by retaining examples with only one relevant label.
@@ -24,7 +21,6 @@ Because the data sets are too large, we only provide a synthetic data set slashd
 
 
 4. Declare
-===========================================================================
 EuDist2.m is from [1] and getProperDim.m is from [2].
 
 [1]. He, X.; and Niyogi, P. 2003. Locality preserving projections. Advances in Neural Information Processing Systems, 16.
