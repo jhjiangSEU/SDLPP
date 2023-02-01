@@ -1,9 +1,9 @@
-function [X, P] = solver(X, D, S, thr, mu)
+function [X, P] = solver(X, D, S, thr, miu)
 % get projected data by solving a generalized eigenvalue problem
 %
 % Syntax
 %
-%       [X, P] = solver(X, D, S, thr, mu)
+%       [X, P] = solver(X, D, S, thr, miu)
 %
 % Description
 %
@@ -12,7 +12,7 @@ function [X, P] = solver(X, D, S, thr, mu)
 %           D                - An M x M array, the semantic dissimilarity matrix obtained in the previous iteration 
 %           S                - An M x M array, the labeling confidence matrix obtained in the previous iteration
 %           thr              - the threshold parameter
-%           mu               - the trade-off parameter
+%           miu               - the trade-off parameter
 %
 %      and returns,
 %           X                - An M x D' array, the projected data matrix
@@ -20,7 +20,7 @@ function [X, P] = solver(X, D, S, thr, mu)
 %
 
 % construct B, A and L
-B = D - mu * S;
+B = D - miu * S;
 B = (B+B')/2;
 sum_B = sum(B, 2);
 A = sparse(diag(sum_B));

@@ -24,7 +24,7 @@ q = size(partial_target, 1);      %   Number of labels
 T = para.T;
 target_d = para.target_d;
 k = para.k;
-mu = para.mu;
+miu = para.miu;
 thr = para.thr;
 
 % initialize Y and D
@@ -41,7 +41,7 @@ for i = 1:T
     
     [E_dist, S] = constructS(X, D, k);
     [Y, D] = updateY(E_dist, Y, k); % update Y and D
-    [lower_data,~] = solver(X, D, S, thr, mu);  % solve a generalized eigenvalue problem
+    [lower_data,~] = solver(X, D, S, thr, miu);  % solve a generalized eigenvalue problem
 
     d_new = size(lower_data, 2);
     X = lower_data;
@@ -51,7 +51,7 @@ for i = 1:T
     
     clear E_dist lower_data
 end
-[X, P] = solver(data, D, S, target_d, mu);   % final dimensionality reduction
+[X, P] = solver(data, D, S, target_d, miu);   % final dimensionality reduction
 end
 
 
