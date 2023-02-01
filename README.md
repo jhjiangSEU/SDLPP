@@ -1,9 +1,7 @@
 # SDLPP
-The code of SDLPP
-
 1. Directory structure
 ├── SDLPP		// SDLPP code
-├── datasets                   	// a synthetic data set with r=1,2,3 and a real-world dataset
+├── datasets   // a synthetic data set with r=1,2,3 and a real-world dataset
 ├── README.txt
 
 
@@ -23,6 +21,5 @@ Because the data sets are too large, we only provide a synthetic data set slashd
 4. Declare
 EuDist2.m is from [1] and getProperDim.m is from [2].
 
-[1]. He, X.; and Niyogi, P. 2003. Locality preserving projections. Advances in Neural Information Processing Systems, 16.
-[2]. Bao, W.; Hang, J.; and Zhang, M. 2021. Partial Label Dimensionality Reduction via Confidence-Based Dependence Maximization. 
-      In Proceedings of the 27th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, 46–54. Virtual Conference.
+[1] Xiao-Fei He and Partha Niyogi. 2003. Locality preserving projections. In Advances in Neural Information Processing Systems 16. MIT Press, Cambridge, MA, 153–160.
+[2] Wei-Xuan Bao, Jun-Yi Hang, and Min-Ling Zhang. 2021. Partial label dimensionality reduction via confidence-based dependence maximization. In Proceedings of the 27th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining. Virtual Event, 46–54.
