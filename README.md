@@ -1,4 +1,5 @@
 # SDLPP
+This is the code of our KDD23 submission: Semantic Dissimilarity Guided Locality Preserving Projections for Partial Label Dimensionality Reduction.  
 ## How to start?
 Just run demo.m.
 
